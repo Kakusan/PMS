@@ -1,0 +1,11 @@
+Time spent in writing program
+
+1.  1/16   From 16:00 to 18:00	裝IDE、喚醒Java的記憶
+
+2.  1/17   From 15:00 to 19:00	完成大部分功能
+
+3.  1/18   From 21:00 to 24:00	改用相對路徑讀檔
+
+4.  1/19   From 00:00 to 02:00	處理例外情況
+
+Total 11 hours
