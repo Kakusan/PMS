@@ -10,7 +10,9 @@ public class Main {
         FileManager fileManager = new FileManager();
         List<String[]> dataLines = fileManager.getDataLines();
         List<Sensor> sensors = new ArrayList<Sensor>();
-        fileManager.readFile("D:/SampleInput.txt");
+        String base = String.valueOf(Thread.currentThread().getContextClassLoader().getResource(""));
+        System.out.println(base.substring(6));
+        fileManager.readFile(base.substring(6) + "SampleInput.txt");
 
         for (int i = 1; i < dataLines.size(); i++) {
             if (dataLines.get(i)[0].equals("BloodPressureSensor"))

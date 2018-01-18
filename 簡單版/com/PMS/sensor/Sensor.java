@@ -19,7 +19,8 @@ public class Sensor {
         this.upperBound = Integer.valueOf(upperBound);
 
         FileManager fileManager = new FileManager();
-        fileManager.readFile("C:/" + datasetName);
+		String base = String.valueOf(Thread.currentThread().getContextClassLoader().getResource(""));
+        fileManager.readFile(base.substring(6) + datasetName);
         for (String[] data: fileManager.getDataLines())
             patientData.add(Double.valueOf(data[0]));
     }
